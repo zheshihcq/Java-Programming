@@ -1,0 +1,14 @@
+1mportJava.ut1Scanner;
+public class computeAreawithIfElse{
+public static void main(string[] args){
+Scanner input =new scanner(system.in);// Prompt a user to enter a radius
+System.out.print("Enter a number for radius; ");
+double radius = input.nextDouble();if(radius >=0 ){
+double area =radius *radius* 3.14159;
+System.out.printIn("The area for the circle of radiusradius +"is "+ area);
+input.close();
+else 
+System.out.println("Negative input");
+}
+}
+}
