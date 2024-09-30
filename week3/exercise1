@@ -1,5 +1,5 @@
 import java.util.scanner;
-public class AdditionQuiz {
+public class Main {
 public static void main(string[] args){
 int number1 =(int)(system.currentTimeMillis()% 10);// generate number1
 int number2 =(int)(System.currentTimeMillis()/10 % 10);//generate number2
