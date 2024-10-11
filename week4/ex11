@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class SalesTaxCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the amount: ");
+        double amount = scanner.nextDouble();
+        double taxRate = 0.06;
+        double salesTax = amount * taxRate;
+        System.out.printf("The sales tax is: %.2f\n", salesTax);
+        scanner.close();
+    }
+}
