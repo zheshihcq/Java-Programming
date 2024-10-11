@@ -1,1 +1,20 @@
+import java.util.Scanner;
+public class DayCalculator {
+    public static void main(String[] args) {
+        // Days of the week array
+        String[] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+        
+        // Starting day (Tuesday)
+        int todayIndex = 2; // Tuesday is the 3rd day, index 2
+        
+        // Number of days to add
+        int daysToAdd = 100;
+        
+        // Calculate the index of the future day
+        int futureDayIndex = (todayIndex + daysToAdd) % 7;
+        
+        // Output the result
+        System.out.println("Today is " + daysOfWeek[todayIndex] + ". In " + daysToAdd + " days, it will be " + daysOfWeek[futureDayIndex] + ".");
+    }
+}
 
