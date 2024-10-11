@@ -1,1 +1,17 @@
 
+import java.util.Scanner;
+public class SecondsConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("请输入秒数: ");
+        int seconds = scanner.nextInt();
+        
+        int minutes = seconds / 60; // 整数除法获得分钟
+        int remainingSeconds = seconds % 60; // 使用取模运算获得剩余秒
+        
+        System.out.println(seconds + " 秒等于 " + minutes + " 分钟和 " + remainingSeconds + " 秒。");
+        
+        scanner.close();
+    }
+}
