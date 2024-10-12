@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ChineseZodiac {
+
+    private static final String[] ZODIAC_ANIMALS = {
+        "Rat", "Ox", "Tiger", "Rabbit", "Dragon",
+        "Snake", "Horse", "Goat", "Monkey", 
+        "Rooster", "Dog", "Pig"
+    };
+
+    public static String getZodiacSign(int year) {
+        // Calculate the index for the Zodiac sign
+        int index = (year - 4) % 12; // 4 corresponds to the year of the Rat
+        return ZODIAC_ANIMALS[index];
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a year: ");
+        int year = scanner.nextInt();
+
+        String zodiacSign = getZodiacSign(year);
+        
+        System.out.println("The Chinese Zodiac sign for the year " + year + " is: " + zodiacSign);
+
+        scanner.close();
+    }
+}
