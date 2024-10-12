@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class WeekdayOrWeekend {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a day number (0 for Sunday, 1 for Monday, ..., 6 for Saturday): ");
+        int day = scanner.nextInt();
+        if (day >= 0 && day <= 6) {
+            switch (day) {
+                case 0:
+                case 6:
+                    System.out.println("Weekend");
+                    break;
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    System.out.println("Weekday");
+                    break;
+                default:
+                    System.out.println("Invalid day number.");
+            }
+        } else {
+            System.out.println("Invalid input! Please enter a number between 0 and 6.");
+        }
+
+        scanner.close();
+    }
+}
