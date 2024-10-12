@@ -1,0 +1,14 @@
+int x;
+int day = 3; 
+
+if (day == 1) {
+    x = 10;
+} else if (day == 2) {
+    x = 20;
+} else if (day == 3) {
+    x = 30;
+} else if (day == 4) {
+    x = 40;
+} else {
+    x = 50; 
+}
