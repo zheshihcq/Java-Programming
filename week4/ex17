@@ -1,0 +1,17 @@
+public class TwoDigitFormatter {
+
+    public static String formatTwoDigitNumber(int num) {
+        if (num < 0 || num > 99) {
+            throw new IllegalArgumentException("Number must be between 0 and 99");
+        }
+        return String.format("%02d", num);
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {0, 8, 25, 99};
+        for (int num : numbers) {
+            String formattedNumber = formatTwoDigitNumber(num);
+            System.out.println(formattedNumber); 
+        }
+    }
+}
