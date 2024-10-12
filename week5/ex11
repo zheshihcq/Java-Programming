@@ -1,0 +1,13 @@
+public class StringConcat {
+    public static void main(String[] args) {
+        // 连接三个字符串
+        String message = "Welcome " + "to " + "Java";
+        System.out.println(message);
+        // 连接字符串和数字
+        String s = "Chapter" + 2;
+        System.out.println(s);
+        // 连接字符串和字符
+        String s1 = "Supplement" + 'B';
+        System.out.println(s1);
+    }
+}
