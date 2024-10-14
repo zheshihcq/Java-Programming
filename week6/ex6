@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Example5_5_DoWhile {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int sum = 0;
+        int data;
+        do {
+            data = input.nextInt();
+            if (data!= 0) {
+                sum += data;
+            }
+        } while (data!= 0);
+        System.out.println("The sum is " + sum);
+    }
+}
