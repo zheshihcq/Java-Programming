@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class AdditionQuizRewritten {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1 = 5;
+        int num2 = 9;
+        int answer;
+        do {
+            System.out.print("What is " + num1 + " + " + num2 + "? ");
+            answer = input.nextInt();
+            if (answer!= num1 + num2) {
+                System.out.println("Wrong answer. Try again.");
+            }
+        } while (answer!= num1 + num2);
+        System.out.println("You got it!");
+    }
+}
+ 
