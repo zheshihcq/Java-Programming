@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class HexToDecimal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("请输入一个十六进制数: ");
+        String hexNumber = scanner.nextLine();
+        int decimalNumber = hexToDecimal(hexNumber);
+        System.out.println("十进制数: " + decimalNumber);
+    }
+
+    public static int hexToDecimal(String hex) {
+        return Integer.parseInt(hex, 16);
+    }
+}
